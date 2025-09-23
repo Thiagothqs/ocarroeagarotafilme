@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #009398;
+    color: white;
+    margin: 0;
+}
+header{
+    background-color: #FF9127;
+    color: black;
+    /* padding-left: 4%; */
+    padding: 2%;
+    
+    nav{
+        float: right;
+        
+        span{
+            padding: 25px;
+            font-size: 17px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+    }
+    img{
+        width: 6%;
+    }
+    .iconHamburguer {
+        display: none;
+    }
+    .div-nav, .div-nav-none {
+        float: right;
+    }
+}
+.div-sobre {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    div {
+        display: flex;
+        width: 50%;
+        padding-right: 25px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 70px;
+        }
+    }
+    .div-poster{
+        align-items: center;
+        img{
+            max-width: 70%;
+        }
+    }
+}
+.div-agradecimento {
+    text-align: center;
+    padding-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .div-patrocinadorApoio{
+        display: flex;
+        .div-patrocinador, .div-apoio {
+            display: inline;
+            width: 50%;
+        }
+    }
+}
+.div-redessociais {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.div-equipeElenco{
+    /* background-color: white; */
+    /* color: black; */
+    /* flex-wrap: wrap; */
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    .div-equipeRow{
+        /* background-color: black; */
+        display: flex;
+        padding: 15px;
+        justify-content: space-around;
+        align-items: center;
+        
+        /* div:nth-child(even) {
+            background-color: #FF9127;
+        }
+        div:nth-child(odd) {
+            background-color: #009398;
+        } */
+    }
+    .div-equipe{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-perfil{
+        width: 20%;
+        padding-top: 10px;
+        /* justify-content: space-between; */
+        .foto{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1, h2, h3, h4 {
+        font-size: 300% !important;
+    }
+    .div-sobre {
+        display: block;
+        width: 100% !important;
+        div{
+            width: 100%;
+            padding-right: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .div-patrocinadorApoio {
+        display: block;
+        .div-patrocinador, .div-apoio {
+            display: block;
+        }
+    }
+    .div-equipeRow {
+        display: initial !important;
+        .div-perfil {
+            width: auto;
+            padding-bottom: 10%;
+            .foto{
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .div-agradecimento {
+        width: initial;
+        
+        .div-patrocinadorApoio{
+            padding-top: 3%;
+            display: block;
+            .div-patrocinador, .div-apoio {
+                padding-top: 5%;
+                display: block;
+                width: initial;
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .div-redessociais {
+        padding-top: 10%;
+        svg {
+            width: 10%;
+            height: 10%;
+        }
+    }
+
+    header {
+        /* height: 15%; */
+        padding: 5%;
+        .div-nav {
+            /* height: 421.48px; */
+            background-color: #FF9127;
+            /* padding-left: initial; */
+            display: block;
+            padding-bottom: 50%;
+            float: initial;
+        }
+        .div-nav-none {
+            display: none;
+            float: initial;
+        }
+        nav{
+            text-align: center;
+            width: 100%;
+            a{
+                text-decoration: none !important;
+                
+                span{
+                    /* display: none; */
+                    display: block !important;
+                    color: white;
+                    font-size: 300% !important;
+                }
+            }
+        }
+
+        .iconHamburguer {
+            float: right;
+            display: initial;
+            padding-top: 7%;
+            /* padding-right: 5%; */
+            div{
+                width: 35px;
+                height: 5px;
+                
+                /* width: 3500%; */
+                /* height: 5000%; */
+                
+                background-color: black;
+                margin: 6px 0;
+            }
+        }
+
+        img{
+            /* padding-top: 5%;
+            padding-left: 5%; */
+            width: 20%;
+        }
+    }
+}
