@@ -127,7 +127,7 @@ header{
 
 @media screen and (max-width: 1000px) {
     h1, h2, h3, h4 {
-        font-size: 300% !important;
+        font-size: 300%;
     }
     .div-sobre {
         display: block;
@@ -160,6 +160,12 @@ header{
                 width: 150px;
                 height: 150px;
             }
+        }
+        h1 {
+            font-size: 300% !important;
+        }
+        h2, h3, h4 {
+            font-size: 200% !important;
         }
     }
     .div-agradecimento {
@@ -194,7 +200,7 @@ header{
             background-color: #FF9127;
             /* padding-left: initial; */
             display: block;
-            padding-bottom: 50%;
+            padding-bottom: 55%;
             float: initial;
         }
         .div-nav-none {
