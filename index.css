@@ -68,13 +68,13 @@ header{
     margin-left: auto;
     margin-right: auto;
     
-    .div-patrocinadorApoio{
+    /* .div-patrocinadorApoio{
         display: flex;
         .div-patrocinador, .div-apoio {
             display: inline;
             width: 50%;
         }
-    }
+    } */
 }
 .div-redessociais {
     text-align: center;
@@ -178,8 +178,15 @@ header{
                 padding-top: 5%;
                 display: block;
                 width: initial;
+            }
+            .div-patrocinador{
                 img {
                     width: 40%;
+                }
+            }
+            .div-apoio{
+                img {
+                    width: 90%;
                 }
             }
         }
