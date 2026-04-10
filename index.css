@@ -76,6 +76,16 @@ header{
             width: 50%;
         }
     } */
+    .div-patrocinador{
+        img {
+            width: 15%;
+        }
+    }
+    .div-apoio{
+        img {
+            width: 100%;
+        }
+    }
 }
 .div-redessociais {
     text-align: center;
